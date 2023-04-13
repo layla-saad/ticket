@@ -1,0 +1,183 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script language="JavaScript">history.forward()</script><title>
+	DataSPort
+</title><link href="/App/Styles/StyleGlobal.css?Xz" type="text/css" rel="stylesheet" />
+
+    <script language="JavaScript" charset="iso-8859-15" src="/App/Scripts/servicesDsp.js?Xz"
+        type="text/javascript"></script>
+
+     <script language="JavaScript" charset="iso-8859-15" src="/App/Scripts/placesManif.js?Xz"
+        type="text/javascript"></script>
+        
+    <script language="JavaScript" charset="iso-8859-15" src="/App/Scripts/etatsManifsJournPlaces.js?Xz"
+        type="text/javascript"></script>
+
+<LINK href='/App/Homes/bo/StyleApp.css?Xz' type='text/css' rel='stylesheet'>
+    </head>
+<body>
+    <form method="post" action="./PlacesManif_FiltreFichier.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNzcyMDAzMDMxD2QWAgIDD2QWFgIDDxYCHglpbm5lcmh0bWwFDE1vZCYjMjMyO2xlc2QCBRAQDxYGHg1EYXRhVGV4dEZpZWxkBQF0Hg5EYXRhVmFsdWVGaWVsZAUBdh4LXyFEYXRhQm91bmRnFgIeCG9uY2hhbmdlBQhpbmZvcygyKRAVBg9UT1VTIExFUyBDSEFNUFMDRFNQDlRJUkFHRSBBVSBTT1JUC1RFQ0ggNCBURUFNDUNPTkZJR1VSQVRJT04KVkVSSUYgQUJPUxUGATIBNwE5AjE5AjIxAjI1FCsDBmdnZ2dnZxYBZmRkAgcPFgIeBXZhbHVlBQlTdXBwcmltZXJkAgkPFgIfBQUIUmVub21tZXJkAgsPFgIfBQUHQWpvdXRlcmQCDQ8WAh8ABR1QYXJhbSYjMjMyO3RyZXMgLSBNb2QmIzIzMjtsZWQCDw8WAh8ABRhJbmZvcm1hdGlvbnMgZGlzcG9uaWJsZXNkAhEQEA8WCh4ORGF0YUdyb3VwRmllbGQFAWcfAQUBdB4TRGF0YUdyb3VwRmllbGRWYWx1ZRcAHwIFAXYfA2dkEBUAFQAUKwMAFgBkZAITDxYCHwAFHEluZm9ybWF0aW9ucyAmIzIyNDsgZXh0cmFpcmVkAhUQEA8WCh8GBQFnHwEFAXQfBxdFZgUTSW5mb3JtYXRpb25zIFBsYWNlcwIBBRNJbmZvcm1hdGlvbnMgUGxhY2VzAgIFE0luZm9ybWF0aW9ucyBQbGFjZXMCAwUTSW5mb3JtYXRpb25zIFBsYWNlcwIEBRNJbmZvcm1hdGlvbnMgUGxhY2VzAgUFE0luZm9ybWF0aW9ucyBQbGFjZXMCBgUTSW5mb3JtYXRpb25zIFBsYWNlcwIHBRNJbmZvcm1hdGlvbnMgUGxhY2VzAggFE0luZm9ybWF0aW9ucyBQbGFjZXMCCQUTSW5mb3JtYXRpb25zIFBsYWNlcwIKBRNJbmZvcm1hdGlvbnMgUGxhY2VzAgsFE0luZm9ybWF0aW9ucyBQbGFjZXMCDAUTSW5mb3JtYXRpb25zIFBsYWNlcwINBRNJbmZvcm1hdGlvbnMgUGxhY2VzAg4FE0luZm9ybWF0aW9ucyBQbGFjZXMCDwUTSW5mb3JtYXRpb25zIFBsYWNlcwIQBRNJbmZvcm1hdGlvbnMgUGxhY2VzAhEFE0luZm9ybWF0aW9ucyBQbGFjZXMCEgUTSW5mb3JtYXRpb25zIFBsYWNlcwITBRNJbmZvcm1hdGlvbnMgUGxhY2VzAhQFE0luZm9ybWF0aW9ucyBQbGFjZXMCFQUTSW5mb3JtYXRpb25zIFBsYWNlcwIWBRNJbmZvcm1hdGlvbnMgUGxhY2VzAhcFE0luZm9ybWF0aW9ucyBQbGFjZXMCGAUTSW5mb3JtYXRpb25zIFBsYWNlcwIZBRNJbmZvcm1hdGlvbnMgUGxhY2VzAhoFE0luZm9ybWF0aW9ucyBQbGFjZXMCGwUTSW5mb3JtYXRpb25zIFBsYWNlcwIcBRNJbmZvcm1hdGlvbnMgUGxhY2VzAh0FIkluZm9ybWF0aW9ucyBDbGllbnQgQsOpbsOpZmljaWFpcmUCHgUiSW5mb3JtYXRpb25zIENsaWVudCBCw6luw6lmaWNpYWlyZQIfBSJJbmZvcm1hdGlvbnMgQ2xpZW50IELDqW7DqWZpY2lhaXJlAiAFIkluZm9ybWF0aW9ucyBDbGllbnQgQsOpbsOpZmljaWFpcmUCIQUiSW5mb3JtYXRpb25zIENsaWVudCBCw6luw6lmaWNpYWlyZQIiBSJJbmZvcm1hdGlvbnMgQ2xpZW50IELDqW7DqWZpY2lhaXJlAiMFIkluZm9ybWF0aW9ucyBDbGllbnQgQsOpbsOpZmljaWFpcmUCJAUiSW5mb3JtYXRpb25zIENsaWVudCBCw6luw6lmaWNpYWlyZQIlBSJJbmZvcm1hdGlvbnMgQ2xpZW50IELDqW7DqWZpY2lhaXJlAiYFIkluZm9ybWF0aW9ucyBDbGllbnQgQsOpbsOpZmljaWFpcmUCJwUiSW5mb3JtYXRpb25zIENsaWVudCBCw6luw6lmaWNpYWlyZQIoBSJJbmZvcm1hdGlvbnMgQ2xpZW50IELDqW7DqWZpY2lhaXJlAikFIkluZm9ybWF0aW9ucyBDbGllbnQgQsOpbsOpZmljaWFpcmUCKgUiSW5mb3JtYXRpb25zIENsaWVudCBCw6luw6lmaWNpYWlyZQIrBSJJbmZvcm1hdGlvbnMgQ2xpZW50IELDqW7DqWZpY2lhaXJlAiwFIkluZm9ybWF0aW9ucyBDbGllbnQgQsOpbsOpZmljaWFpcmUCLQUiSW5mb3JtYXRpb25zIENsaWVudCBCw6luw6lmaWNpYWlyZQIuBSJJbmZvcm1hdGlvbnMgQ2xpZW50IELDqW7DqWZpY2lhaXJlAi8FIkluZm9ybWF0aW9ucyBDbGllbnQgQsOpbsOpZmljaWFpcmUCMAUiSW5mb3JtYXRpb25zIENsaWVudCBCw6luw6lmaWNpYWlyZQIxBSJJbmZvcm1hdGlvbnMgQ2xpZW50IELDqW7DqWZpY2lhaXJlAjIFIkluZm9ybWF0aW9ucyBDbGllbnQgQsOpbsOpZmljaWFpcmUCMwUiSW5mb3JtYXRpb25zIENsaWVudCBCw6luw6lmaWNpYWlyZQI0BSJJbmZvcm1hdGlvbnMgQ2xpZW50IELDqW7DqWZpY2lhaXJlAjUFIkluZm9ybWF0aW9ucyBDbGllbnQgQsOpbsOpZmljaWFpcmUCNgUiSW5mb3JtYXRpb25zIENsaWVudCBCw6luw6lmaWNpYWlyZQI3BSJJbmZvcm1hdGlvbnMgQ2xpZW50IELDqW7DqWZpY2lhaXJlAjgFIkluZm9ybWF0aW9ucyBDbGllbnQgQsOpbsOpZmljaWFpcmUCOQUiSW5mb3JtYXRpb25zIENsaWVudCBCw6luw6lmaWNpYWlyZQI6BSJJbmZvcm1hdGlvbnMgQ2xpZW50IELDqW7DqWZpY2lhaXJlAjsFIkluZm9ybWF0aW9ucyBDbGllbnQgQsOpbsOpZmljaWFpcmUCPAUiSW5mb3JtYXRpb25zIENsaWVudCBCw6luw6lmaWNpYWlyZQI9BSJJbmZvcm1hdGlvbnMgQ2xpZW50IELDqW7DqWZpY2lhaXJlAj4FIkluZm9ybWF0aW9ucyBDbGllbnQgQsOpbsOpZmljaWFpcmUCPwUiSW5mb3JtYXRpb25zIENsaWVudCBCw6luw6lmaWNpYWlyZQJABSJJbmZvcm1hdGlvbnMgQ2xpZW50IELDqW7DqWZpY2lhaXJlAkEFFUluZm9ybWF0aW9ucyBDb21tYW5kZQJCBRVJbmZvcm1hdGlvbnMgQ29tbWFuZGUCQwUVSW5mb3JtYXRpb25zIENvbW1hbmRlAkQFFkluZm9ybWF0aW9ucyBDb250csO0bGUfAgUBdh8DZ2QQFUUJQ09ERSBTSVRFCE5PTSBTSVRFEk5VTS4gTUFOSUZFU1RBVElPThFOT00gTUFOSUZFU1RBVElPThJEQVRFIE1BTklGRVNUQVRJT04KRVRBVCBQTEFDRQlSRVNFUlZPSVIJQ0FURUdPUklFF0RBVEUgTU9ESUZJQ0FUSU9OIFBMQUNFD09QRVJBVEVVUiBQTEFDRQtOVU0uRURJVElPTgtSRUYuRVhURVJORQVUQVJJRhJQUklYIEhPUlMgTE9DQVRJT04NUFJJWCBMT0NBVElPTgpQUklYIFZFTlRFCUxJQkVMTEUgMQlMSUJFTExFIDIJTElCRUxMRSAzCUxJQkVMTEUgNAlMSUJFTExFIDUHU1VQUE9SVAZQUk9GSUwJUFJPTU9USU9OBUFDQ0VTBFJBTkcFUExBQ0UEWk9ORRFDT01NRU5UQUlSRSBQTEFDRRROVU1FUk8gQ0xJRU5UIEJFTkVGLhxSQUlTT04gU09DSUFMRSBDTElFTlQgQkVORUYuElNFWEUgQ0xJRU5UIEJFTkVGLhRMQU5HVUUgQ0xJRU5UIEJFTkVGLhdBRFJFU1NFIDEgQ0xJRU5UIEJFTkVGLhdBRFJFU1NFIDIgQ0xJRU5UIEJFTkVGLhdBRFJFU1NFIDMgQ0xJRU5UIEJFTkVGLhlDT0RFIFBPU1RBTCBDTElFTlQgQkVORUYuE1ZJTExFIENMSUVOVCBCRU5FRi4SUEFZUyBDTElFTlQgQkVORUYuHFRFTEVQSE9ORSBGSVhFIENMSUVOVCBCRU5FRi4eVEVMRVBIT05FIE1PQklMRSBDTElFTlQgQkVORUYuEUZBWCBDTElFTlQgQkVORUYuE0VNQUlMIENMSUVOVCBCRU5FRi4fREFURSBERSBOQUlTU0FOQ0UgQ0xJRU5UIEJFTkVGLhlOQVRJT05BTElURSBDTElFTlQgQkVORUYuFFRZUEUgMiBDTElFTlQgQkVORUYuFFRZUEUgMyBDTElFTlQgQkVORUYuGUNPTU1FTlRBSVJFIENMSUVOVCBCRU5FRi4WRElWRVJTIDEgQ0xJRU5UIEJFTkVGLhZESVZFUlMgMiBDTElFTlQgQkVORUYuFkRJVkVSUyAzIENMSUVOVCBCRU5FRi4WRElWRVJTIDQgQ0xJRU5UIEJFTkVGLhZESVZFUlMgNSBDTElFTlQgQkVORUYuFEMuUy5QLiBDTElFTlQgQkVORUYuFkNJVklMSVRFIENMSUVOVCBCRU5FRi4RTk9NIENMSUVOVCBCRU5FRi4UUFJFTk9NIENMSUVOVCBCRU5FRi4KSU5GT1MgQ0xVQhBJTkZPUyBQQVJURU5BSVJFHU7DgsKwIFBBU1NFUE9SVCBDTElFTlQgQkVORUYuIk7DgsKwIENBUlRFIElERU5USVRFIENMSUVOVCBCRU5FRi4fSURFTlRJRklBTlQgQ1JNIDIgQ0xJRU5UIEJFTkVGLhRUWVBFIDEgQ0xJRU5UIEJFTkVGLhJFVEFUIENMSUVOVCBCRU5FRi4dSURFTlRJRklBTlQgQ1JNIENMSUVOVCBCRU5FRi4ST1BFUkFURVVSIENPTU1BTkRFD05VTUVSTyBDT01NQU5ERRBSRUZFUkVOQ0UgQkFOUVVFG0RBVEUgSEVVUkUgQ09OVFJPTEUgRCBBQ0NFUxVFCjI7Y29kX3NpdGUTMjtub21TaXRlKGNvZF9zaXRlKQsyO251bV9tYW5pZhUyO25vbU1hbmlmKG51bV9tYW5pZikiMjtkYXRlU2VhbmNlKG51bV9tYW5pZixudW1fc2VhbmNlKRkyO25vbUV0YXRQbGFjZShldGFfcGxhY2UpJjI7bm9tUmVzZXJ2b2lyKGNvZF9zaXRlLGNvZF9yZXNlcnZvaXIpHDI7bm9tQ2F0cHJpKGNvZF9zaXRlLGNhdHByaSkPMjtyZS5kYXRlX21vZGlmGTI7bm9tVmVuZGV1cihjb2RfdmVuZGV1cikLMjtudW1fYmF0Y2gIMjtyZWZleHQuMjtsaWJUYXJpZihudW1fbWFuaWYsbnVtX3NlYW5jZSxjYXRwcmksY2F0Y2xpKSAyOyhwcml4X3ZlbnRlLXByaXhfbG9jYXRpb24pLzEwMBMyO3ByaXhfbG9jYXRpb24vMTAwEDI7cHJpeF92ZW50ZS8xMDAhMjtsaWJlbGxlcGxhY2UoY29kX3NpdGUsbGliZWxsZTEpITI7bGliZWxsZXBsYWNlKGNvZF9zaXRlLGxpYmVsbGUyKSEyO2xpYmVsbGVwbGFjZShjb2Rfc2l0ZSxsaWJlbGxlMykhMjtsaWJlbGxlcGxhY2UoY29kX3NpdGUsbGliZWxsZTQpITI7bGliZWxsZXBsYWNlKGNvZF9zaXRlLGxpYmVsbGU1KR0yO25vbVN1cHBvcnRQbGFjZShpZF9zdXBwb3J0KRYyO25vbVByb2ZpbChpZF9wcm9maWwpGDI7bm9tUHJvbW90aW9uKGlkX3Byb21vKQcyO2FjY2VzBjI7cmFuZwsyO251bV9wbGFjZRwyO2xpYmVsbGV6b25lKGNvZF9zaXRlLHpvbmUpEDI7cmUuY29tbWVudGFpcmUOMztyZS5pZF9jbGllbnQTMztjMS5yYWlzb25fc29jaWFsZQkzO2MxLnNleGULMztjMS5sYW5ndWUNMztjMS5hZHJlc3NlMQ0zO2MxLmFkcmVzc2UyDTM7YzEuYWRyZXNzZTMQMztjMS5jb2RlX3Bvc3RhbAozO2MxLnZpbGxlFzM7bm9tUGF5cyhjMS5jb2RlX3BheXMpDjM7YzEudGVsZXBob25lDTM7YzEucG9ydGFibGUIMztjMS5mYXgKMztjMS5lbWFpbBMzO2MxLmRhdGVfbmFpc3NhbmNlGTM7bm9tUGF5cyhjMS5jb2RlX25hdGlvbikaMztub21UeXBlQ2xpZW50MihjMS50eXBlMikaMztub21UeXBlQ2xpZW50MyhjMS50eXBlMykQMztjMS5jb21tZW50YWlyZQwzO2MxLmRpdmVyczEMMztjMS5kaXZlcnMyDDM7YzEuZGl2ZXJzMwwzO2MxLmRpdmVyczQMMztjMS5kaXZlcnM1EzM7bm9tQ1NQKGMxLmlkX2NzcCkfMztub21DaXZpbGl0ZShjMS5jb2RlX2NpdmlsaXRlKQgzO2MxLm5vbQszO2MxLnByZW5vbQ8zO2MxLmluZm9zX2NsdWIPMztjMS5pbmZvc19wYXJ0EjM7YzEubnVtX3Bhc3NlcG9ydBEzO2MxLm51bV9pZGVudGl0ZRUzO2NtYy5pZF9wYXJ0ZW5haXJlXzIaMztub21UeXBlQ2xpZW50MShjMS50eXBlMSkZMztub21FdGF0VVMoYzEuY29kZV9ldGF0KRUzO2NtYy5pZF9wYXJ0ZW5haXJlXzE1NTtub212ZW5kZXVyKGdldE9wZXJhdGV1ckNyZWF0aW9uQ21kKHJlLmlkX2NvbW1hbmRlKSkLNTtyZS5pZF9jbWQPNTtyZS5yZWZfYmFucXVlEDE0O3JjYWMuZGF0ZV9jYWMUKwNFZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnFgBkZAIXDxYCHwUFB1ZhbGlkZXJkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYCBQ5sc3RJbmZvc0Rpc3BvcwUSbHN0SW5mb3NFeHRyYWN0aW9uk77GvTlhiPSk5iLFbhBBSUy8hKIWrPeOsHphgJPy1zY=" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="7263EBCA" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAWlG1jTI8GFZEY7AcWoePVer/Sy5et2Vd5K8Yf7d58x57zovcXP+eL3puX2jCTXQ6Evcw8fjwu6wfupl25Yk11U6FSF6qaMEpSE+WUquPSqoMyPW9xtI1wjtF2FnabpbnHFZduoMQnxtcGhkaJ9YfdT" />
+</div>
+        <div>
+            <span id="lblTitre" class="titrepage" style="display:inline-block;height:4px;width:345px;z-index: 100; left: 20px; position: absolute; top: 8px">Informations Places</span>
+
+             <fieldset style="z-index: 102; left: 20px; width: 845px; position: absolute; top: 40px;
+                height: 200px">
+                 <legend id="lblModeles" class="legend">Mod&#232;les</legend>
+                 <div id="divModeles" style="left: 15px; position: absolute; top: 20px">
+                    <select size="4" name="lstModeles" id="lstModeles" tabindex="10" class="liste" onchange="infos(2)" style="height:150px;width:790px;">
+	<option selected="selected" value="2">TOUS LES CHAMPS</option>
+	<option value="7">DSP</option>
+	<option value="9">TIRAGE AU SORT</option>
+	<option value="19">TECH 4 TEAM</option>
+	<option value="21">CONFIGURATION</option>
+	<option value="25">VERIF ABOS</option>
+
+</select>
+                </div>
+
+                 <input name="btnSupprimer" type="button" id="btnSupprimer" class="button" style="z-index: 108; left: 552px; width: 81px;
+                    position: absolute; top: 176px; height: 20px" tabindex="20" onclick="mod(&#39;del&#39;, 2)" value="Supprimer" />
+
+                <input name="btnRenommer" type="button" id="btnRenommer" class="button" style="z-index: 109; left: 637px; width: 81px;
+                    position: absolute; top: 176px; height: 20px" tabindex="30" value="Renommer" onclick="mod(&#39;ren&#39;, 2)" />
+
+                <input name="btnAjouter" type="button" id="btnAjouter" class="button" style="z-index: 112; left: 722px; width: 81px;
+                    position: absolute; top: 176px; height: 20px" tabindex="40" value="Ajouter" onclick="mod(&#39;add&#39;, 2)" />
+             </fieldset>
+
+              <fieldset style="z-index: 102; left: 20px; position: absolute; top: 260px; width: 845px; height: 510px">
+                <legend id="ldParamsMods" class="legend">Param&#232;tres - Mod&#232;le</legend>
+                <fieldset style="z-index: 102; left: 20px; width: 355px; position: absolute; top: 20px;
+                    height: 490px">
+                    <legend id="lblInfosDispos" class="legend">Informations disponibles</legend>
+                    <div style="left: 15px; position: absolute; top: 20px" id="divInfosDispos">
+                        <select size="4" name="lstInfosDispos" multiple="multiple" id="lstInfosDispos" tabindex="10" class="liste" style="height:430px;width:317px;">
+
+</select>
+                    </div>
+                </fieldset>
+
+                <input class="button" id="btnAdd1" style="z-index: 108; left: 393px; width: 40px;
+                    position: absolute; top: 124px; height: 20px" tabindex="20" type="button" value=">"
+                    name="btnAdd1" onclick="filtrechamps('add','1', 2)" />
+                <input class="button" id="btnAddAll" style="z-index: 109; left: 393px; width: 40px;
+                    position: absolute; top: 161px; height: 20px" tabindex="30" type="button" value=">>"
+                    name="btnAddAll" onclick="filtrechamps('add','all', 2)" />
+                <input class="button" id="btnDel1" style="z-index: 112; left: 393px; width: 40px;
+                    position: absolute; top: 198px; height: 20px" tabindex="40" type="button" value="<"
+                    name="btnAdd1" onclick="filtrechamps('del','1', 2)" />
+                <input class="button" id="btnDelAll" style="z-index: 113; left: 393px; width: 40px;
+                    position: absolute; top: 235px; height: 20px" tabindex="50" type="button" value="<<"
+                    name="btnAddAll" onclick="filtrechamps('del','all', 2)" />
+
+                <fieldset style="z-index: 102; left: 443px; width: 403px; position: absolute; top: 20px;
+                    height: 490px">
+                    <legend id="lblInfosAExtraire" class="legend">Informations &#224; extraire</legend>
+                    <div style="left: 15px; position: absolute; top: 20px" id="divInfosExtraction">
+                        <select size="4" name="lstInfosExtraction" multiple="multiple" id="lstInfosExtraction" tabindex="60" class="liste" style="height:430px;width:317px;">
+	<optgroup label="Informations Places">
+	<option value="2;cod_site">CODE SITE</option>
+	<option value="2;nomSite(cod_site)">NOM SITE</option>
+	<option value="2;num_manif">NUM. MANIFESTATION</option>
+	<option value="2;nomManif(num_manif)">NOM MANIFESTATION</option>
+	<option value="2;dateSeance(num_manif,num_seance)">DATE MANIFESTATION</option>
+	<option value="2;nomEtatPlace(eta_place)">ETAT PLACE</option>
+	<option value="2;nomReservoir(cod_site,cod_reservoir)">RESERVOIR</option>
+	<option value="2;nomCatpri(cod_site,catpri)">CATEGORIE</option>
+	<option value="2;re.date_modif">DATE MODIFICATION PLACE</option>
+	<option value="2;nomVendeur(cod_vendeur)">OPERATEUR PLACE</option>
+	<option value="2;num_batch">NUM.EDITION</option>
+	<option value="2;refext">REF.EXTERNE</option>
+	<option value="2;libTarif(num_manif,num_seance,catpri,catcli)">TARIF</option>
+	<option value="2;(prix_vente-prix_location)/100">PRIX HORS LOCATION</option>
+	<option value="2;prix_location/100">PRIX LOCATION</option>
+	<option value="2;prix_vente/100">PRIX VENTE</option>
+	<option value="2;libelleplace(cod_site,libelle1)">LIBELLE 1</option>
+	<option value="2;libelleplace(cod_site,libelle2)">LIBELLE 2</option>
+	<option value="2;libelleplace(cod_site,libelle3)">LIBELLE 3</option>
+	<option value="2;libelleplace(cod_site,libelle4)">LIBELLE 4</option>
+	<option value="2;libelleplace(cod_site,libelle5)">LIBELLE 5</option>
+	<option value="2;nomSupportPlace(id_support)">SUPPORT</option>
+	<option value="2;nomProfil(id_profil)">PROFIL</option>
+	<option value="2;nomPromotion(id_promo)">PROMOTION</option>
+	<option value="2;acces">ACCES</option>
+	<option value="2;rang">RANG</option>
+	<option value="2;num_place">PLACE</option>
+	<option value="2;libellezone(cod_site,zone)">ZONE</option>
+	<option value="2;re.commentaire">COMMENTAIRE PLACE</option>
+	</optgroup>
+	<optgroup label="Informations Client Bénéficiaire">
+	<option value="3;re.id_client">NUMERO CLIENT BENEF.</option>
+	<option value="3;c1.raison_sociale">RAISON SOCIALE CLIENT BENEF.</option>
+	<option value="3;c1.sexe">SEXE CLIENT BENEF.</option>
+	<option value="3;c1.langue">LANGUE CLIENT BENEF.</option>
+	<option value="3;c1.adresse1">ADRESSE 1 CLIENT BENEF.</option>
+	<option value="3;c1.adresse2">ADRESSE 2 CLIENT BENEF.</option>
+	<option value="3;c1.adresse3">ADRESSE 3 CLIENT BENEF.</option>
+	<option value="3;c1.code_postal">CODE POSTAL CLIENT BENEF.</option>
+	<option value="3;c1.ville">VILLE CLIENT BENEF.</option>
+	<option value="3;nomPays(c1.code_pays)">PAYS CLIENT BENEF.</option>
+	<option value="3;c1.telephone">TELEPHONE FIXE CLIENT BENEF.</option>
+	<option value="3;c1.portable">TELEPHONE MOBILE CLIENT BENEF.</option>
+	<option value="3;c1.fax">FAX CLIENT BENEF.</option>
+	<option value="3;c1.email">EMAIL CLIENT BENEF.</option>
+	<option value="3;c1.date_naissance">DATE DE NAISSANCE CLIENT BENEF.</option>
+	<option value="3;nomPays(c1.code_nation)">NATIONALITE CLIENT BENEF.</option>
+	<option value="3;nomTypeClient2(c1.type2)">TYPE 2 CLIENT BENEF.</option>
+	<option value="3;nomTypeClient3(c1.type3)">TYPE 3 CLIENT BENEF.</option>
+	<option value="3;c1.commentaire">COMMENTAIRE CLIENT BENEF.</option>
+	<option value="3;c1.divers1">DIVERS 1 CLIENT BENEF.</option>
+	<option value="3;c1.divers2">DIVERS 2 CLIENT BENEF.</option>
+	<option value="3;c1.divers3">DIVERS 3 CLIENT BENEF.</option>
+	<option value="3;c1.divers4">DIVERS 4 CLIENT BENEF.</option>
+	<option value="3;c1.divers5">DIVERS 5 CLIENT BENEF.</option>
+	<option value="3;nomCSP(c1.id_csp)">C.S.P. CLIENT BENEF.</option>
+	<option value="3;nomCivilite(c1.code_civilite)">CIVILITE CLIENT BENEF.</option>
+	<option value="3;c1.nom">NOM CLIENT BENEF.</option>
+	<option value="3;c1.prenom">PRENOM CLIENT BENEF.</option>
+	<option value="3;c1.infos_club">INFOS CLUB</option>
+	<option value="3;c1.infos_part">INFOS PARTENAIRE</option>
+	<option value="3;c1.num_passeport">N&#194;&#176; PASSEPORT CLIENT BENEF.</option>
+	<option value="3;c1.num_identite">N&#194;&#176; CARTE IDENTITE CLIENT BENEF.</option>
+	<option value="3;cmc.id_partenaire_2">IDENTIFIANT CRM 2 CLIENT BENEF.</option>
+	<option value="3;nomTypeClient1(c1.type1)">TYPE 1 CLIENT BENEF.</option>
+	<option value="3;nomEtatUS(c1.code_etat)">ETAT CLIENT BENEF.</option>
+	<option value="3;cmc.id_partenaire_1">IDENTIFIANT CRM CLIENT BENEF.</option>
+	</optgroup>
+	<optgroup label="Informations Commande">
+	<option value="5;nomvendeur(getOperateurCreationCmd(re.id_commande))">OPERATEUR COMMANDE</option>
+	<option value="5;re.id_cmd">NUMERO COMMANDE</option>
+	<option value="5;re.ref_banque">REFERENCE BANQUE</option>
+	</optgroup>
+	<optgroup label="Informations Contrôle">
+	<option value="14;rcac.date_cac">DATE HEURE CONTROLE D ACCES</option>
+	</optgroup>
+
+</select>
+                    </div>
+                </fieldset>
+
+                <input class="button" id="btnUp" style="z-index: 110; left: 787px; width: 40px; position: absolute;
+                    top: 124px; height: 20px" onclick="ordrechamps('up', 2)" tabindex="70" type="button"
+                    value="+" name="btnUp" />
+                <input class="button" id="btnDown" style="z-index: 111; left: 787px; width: 40px;
+                    position: absolute; top: 161px; height: 20px" onclick="ordrechamps('down', 2)" tabindex="80"
+                    type="button" value="-" name="btnDown" />
+                <input name="btnExtraire" type="button" id="btnExtraire" class="button" style="z-index: 114; left: 696px; width: 81px;
+                    position: absolute; top: 475px; height: 20px" onclick="validerFiltre()" value="Valider" />
+            </fieldset>
+        </div>
+    </form>
+<div id="divsablier" width="90%"></div><script defer="defer" language="JavaScript">function Sablier(){divsablier.className ='sablier';}try{parent.divsablier.className ='';}catch(e){}try{parent.head.divsablier.className ='';}catch(e){};</script>
+<script charset="iso-8859-1" type="text/javascript" src="/App/Scripts/dspt.js"></script></body>
+</html>
