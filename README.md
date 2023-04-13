@@ -8,30 +8,51 @@ def _retrieve_event_data(self, event):
 
     # 1 # self.makeHTMLFile(self.browser.get_current_page().text)
 
-    response = self.browser.session.post(...)
+```
+[Creteil](files/uscreteil/1_uscreteil_1681395225.html)<br>
+[Biarritz](files/bo/1_bo_1681395251.html)
+```
 
-    ```
-    [# 2 #](2_uscreteil_1681395450.html)  
+    response = self.browser.session.post(...)
     
-    ```
-    # 3 # self.makeHTMLFile(response.text)
+    # 2 # self.makeHTMLFile(response.text)
+
+```
+[Creteil](files/uscreteil/3_uscreteil_1681395726.html)<br>
+[Biarritz](files/bo/3_bo_1681395736.html)
+```
 
     response = self.browser.session.get(...)
+
+    # 3 # self.makeHTMLFile(response.text)
+    
+```
+[Creteil](files/uscreteil/4_uscreteil_1681395858.html)<br>
+[Biarritz](files/bo/4_bo_1681395865.html)
+```
+
+    try:
+        valmod = re.findall(r"selected\" value=\"(\d+)\"", response.text)[0]
+    except Exception as exc:
+        raise InvalidPageFormat(self._get_root_url() + '/App/Etats/Manifestations/PlacesManif_FiltreFichier.aspx') from exc
+
+    response = self.browser.session.post(...)
 
     # 4 # self.makeHTMLFile(response.text)
 
-    try:
-        (...)
-    except Exception as exc:
-        (...)
-
-    response = self.browser.session.post(...)
-
-    # 5 # self.makeHTMLFile(response.text)
+```
+[Creteil](files/uscreteil/5_uscreteil_1681396226.html)<br>
+[Biarritz](files/bo/5_bo_1681396236.html)
+```
 
     response = self.browser.session.get(...)
 
-    # 6 # self.makeHTMLFile(response.text)
+    # 5 # self.makeHTMLFile(response.text)
+
+```
+[Creteil](files/uscreteil/6_uscreteil_1681396335.html)<br>
+[Biarritz](files/bo/6_bo_1681396347.html)
+```
 
     return response.text
     ```
